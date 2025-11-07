@@ -1,0 +1,35 @@
+:root{
+  --bg:#07070a;--panel:#0f1216;--card:#0b0d10;--gold:#D4AF37;--muted:#9aa4b2;
+  --radius:12px;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Cairo',sans-serif;background:var(--bg);color:#eef3f8}
+.container{max-width:1000px;margin:0 auto;padding:18px}
+.site-header{border-bottom:1px solid rgba(255,255,255,0.03);background:transparent}
+.logo{display:flex;align-items:center;gap:10px}
+.logo-ico{font-size:26px}
+.logo-text{font-weight:800}
+.gold{color:var(--gold)}
+nav{display:flex;gap:8px;align-items:center}
+.btn{padding:8px 12px;border-radius:10px;border:none;cursor:pointer}
+.btn.primary{background:linear-gradient(90deg,var(--gold),#f0c75e);color:#081426;font-weight:700}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+.btn.small{padding:6px 10px;font-size:14px}
+.main-hero{padding:22px 0}
+.hero{display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:center}
+.hero-left h1{font-size:32px;margin:0}
+.muted{color:var(--muted)}
+.cards{display:flex;flex-wrap:wrap;gap:12px}
+.card{background:var(--card);padding:14px;border-radius:12px;min-width:220px;flex:1 1 240px;border:1px solid rgba(255,255,255,0.02)}
+.video-thumb{height:220px;border-radius:12px;background:linear-gradient(90deg,#071426,#0b2a4b);display:flex;align-items:center;justify-content:center}
+.mock-phone{padding:12px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border:1px solid rgba(255,255,255,0.03)}
+.balance{margin-top:12px;font-weight:700;color:var(--gold);text-align:center}
+.download-row{display:flex;gap:8px;justify-content:center;margin-top:12px}
+.section{margin-top:22px}
+.footer{margin-top:28px;padding:18px 0;color:var(--muted);text-align:center;border-top:1px solid rgba(255,255,255,0.02)}
+.input{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit;margin:8px 0}
+.modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(2,6,23,0.6)}
+.modal-inner{background:var(--panel);padding:16px;border-radius:12px;max-width:420px;width:92%}
+.light-admin body, .light-admin .container { background: #f8f8fb; color: #0b1220 }
+.light-admin .card{background:#fff;border:1px solid #e6e6ee;color:#0b1220}
+.light-admin .btn.ghost{border:1px solid #dcdce6}
