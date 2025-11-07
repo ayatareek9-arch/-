@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>لوحة الأدمن - شاهد واربح</title>
+<link href="styles.css" rel="stylesheet">
+</head>
+<body class="light-admin">
+  <div class="container">
+    <header class="admin-header">
+      <h2>لوحة الأدمن</h2>
+      <div><button id="adminLogout" class="btn ghost">خروج</button></div>
+    </header>
+
+    <section>
+      <h3>أضف إعلان</h3>
+      <div class="card">
+        <label>عنوان الإعلان</label>
+        <input id="ad_title" class="input" placeholder="عنوان" />
+        <label>رابط الإعلان (اختياري)</label>
+        <input id="ad_link" class="input" placeholder="https://..." />
+        <label>صورة (رابط)</label>
+        <input id="ad_img" class="input" placeholder="https://..." />
+        <button id="addAd" class="btn primary">أضف الإعلان</button>
+      </div>
+    </section>
+
+    <section style="margin-top:18px">
+      <h3>قائمة الإعلانات</h3>
+      <div id="adsAdminList" class="cards"></div>
+    </section>
+
+    <section style="margin-top:18px">
+      <h3>طلبات السحب</h3>
+      <div id="withdrawalsAdmin" class="cards"></div>
+    </section>
+
+  </div>
+
+  <script type="module" src="admin.js"></script>
+</body>
+</html>
